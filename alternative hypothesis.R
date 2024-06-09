@@ -579,7 +579,7 @@ simulate_data <- function(a, N) {
     
     while (TRUE) {
       y_proposed <- runif(1, -pi, pi)
-      f_proposal <- 1 / (2 * pi)
+      f_proposal <- 1 / (pi)
       f_target <- fy_given_x(y_proposed, X[i], a)
       acceptance_prob <- f_target / f_proposal
       
@@ -667,7 +667,7 @@ simulate_data <- function(a, N, d) {
     
     while (TRUE) {
       y_proposed <- runif(1, -pi, pi)
-      f_proposal <- 1 / (2 * pi)
+      f_proposal <- 1 / (pi)
       f_target <- fy_given_x(y_proposed, X[i], a)
       acceptance_prob <- f_target / f_proposal
       
